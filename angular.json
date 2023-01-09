@@ -25,8 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              ".node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+              
             ],
             "scripts": []
           },
@@ -66,7 +67,7 @@
             "development": {
               "browserTarget": "basic-task:build:development"
             }
-          },
+          },  
           "defaultConfiguration": "development"
         },
         "extract-i18n": {

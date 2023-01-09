@@ -1,0 +1,134 @@
+.login-control {
+
+    text-align: center;
+    margin-top: 105px;
+    margin-left: 342px;
+    padding: 2rem;
+    width: 41%;
+    background-color: black;
+    border-radius: 50px 20px;
+
+
+}
+
+.login-form {}
+
+.click {
+    margin-top: 1rem;
+}
+
+.button-subimt {
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box {
+    position: relative;
+    width: 400px;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box::before {
+    width: 25px;
+    height: 100%;
+    filter: blur(1px);
+}
+
+.container .box::after {
+    right: -1px;
+    width: 25px;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(#dbdae1, #a3aaba);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1),
+        20px 10px 20px rgba(0, 0, 0, 0.1), 50px 50px 85px rgba(0, 0, 0, 0.25),
+        inset 3px 3px 2px #fff;
+}
+
+.content .form {
+    position: relative;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .form h2 {
+    font-size: 2em;
+    color: #444;
+}
+
+.content .form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.content .form .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0 10px 25px;
+    font-size: 1em;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #444;
+    color: #444;
+}
+
+.content .form .inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    font-size: 1em;
+    color: #444;
+}
+
+
+
+
+.content .form .links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.content .form .links a {
+    color: #444;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.content .form .inputBox input[type="submit"] {
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1em;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
