@@ -1,0 +1,30 @@
+
+.signup-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ margin: auto;
+    border-radius: 30px;
+    width: 400px;
+   padding: 1rem;
+    background: #1488cc;
+    background: -webkit-linear-gradient(180deg, #1488cc 0%, #2b32b2 100%);
+    background: linear-gradient(180deg, #faa94d 0%, #eb6464 100%);
+}
+.input-control{
+    padding: 0.5rem;
+}
+.click{
+    border:1px solid grey; 
+}
+.button-subimt{
+    border:0px solid !important;
+    padding: 4px ;
+    background: linear-gradient(180deg, #ffffff 0%, #9c8989 100%);
+}
+.heading{
+    font-size: 25px;
+    color:white;
+    font-weight: 600;
+}

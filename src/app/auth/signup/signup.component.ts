@@ -7,21 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
-  signup: any;
+
+
   constructor( private router: Router, ) {
     }
   ngOnInit() {
-    this.signup = {
-      
-      name:'',
-      email: '',
-      mobileno:'',
-      createpassword: '',
-      confirmpassword:''
-
-    }
+  
     }
   submit(){
-    this.router.navigate(['/login']);
+    this.router.navigateByUrl('auth/login');
+  }
+  signup(){
+    
   }
 }

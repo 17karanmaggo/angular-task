@@ -1,19 +1,28 @@
 <div class="conatiner">
     <div class="signup">
-      <form class="signup-control  ">
-        <div class="input-control mb-3">
+      <div class="heading">
+        Signup
+      </div>
+      <!-- <form class="signup-control" [formGroup]="signupForm"(ngSubmit)="signup()"> -->
+        <form>
+        <!-- <div class="input-control mb-3"> -->
+          <div class="form-group">
             <input type="name" id="signup-name" class="signup-form"  pattern="^[a-zA-Z]$"placeholder="Name"> 
           </div>
-          <div class="input-control mb-3">
+          <!-- <div class="input-control mb-3"> -->
+            <div class="form-group">
             <input type="email" id="signup-email" class="signup-form"  pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"placeholder="Email"> 
           </div>
-          <div class="input-control mb-3">
+          <!-- <div class="input-control mb-3"> -->
+            <div class="form-group">
             <input type="mobileno" id="signup-mobileno" class="signup-form"  pattern="^[6789][0-9]{9}$"placeholder="Mobile"> 
           </div>
-          <div class="input-control mb-3">
+          <!-- <div class="input-control mb-3"> -->
+            <div class="form-group">
             <input type="createpass" id="signup-createpass" class="signup-form" placeholder="createpassword">
           </div>
-          <div class="input-control ">
+          <!-- <div class="input-control "> -->
+            <div class="form-group">
             <input type="confirmpass" id="signup-confirmpass" class="signup-form" placeholder="confirmpassword">
           </div>
           <div class="click mt-4">

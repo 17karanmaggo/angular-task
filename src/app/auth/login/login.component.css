@@ -1,15 +1,4 @@
-.login-control {
-
-    text-align: center;
-    margin-top: 105px;
-    margin-left: 342px;
-    padding: 2rem;
-    width: 41%;
-    background-color: black;
-    border-radius: 50px 20px;
-
-
-}
+/* 
 
 .login-form {}
 
@@ -29,7 +18,7 @@
 }
 
 .container .box {
-    position: relative;
+ 
     width: 400px;
     padding-top: 2rem;
     display: flex;
@@ -53,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -64,7 +53,7 @@
 }
 
 .content .form {
-    position: relative;
+    
     width: 260px;
     display: flex;
     justify-content: center;
@@ -78,13 +67,11 @@
 }
 
 .content .form .inputBox {
-    position: relative;
     width: 100%;
     margin-top: 30px;
 }
 
 .content .form .inputBox input {
-    position: relative;
     width: 100%;
     padding: 10px 0 10px 25px;
     font-size: 1em;
@@ -97,7 +84,7 @@
 }
 
 .content .form .inputBox i {
-    position: absolute;
+ 
     left: 0;
     bottom: 15px;
     font-size: 1em;
@@ -120,15 +107,42 @@
     font-size: 0.9em;
 }
 
-.content .form .inputBox input[type="submit"] {
+.content .form .inputBox button[type="submit"] {
     background-color: #444;
     color: #fff;
     cursor: pointer;
     padding: 10px;
     font-size: 1em;
+    width: 100%;
     transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
+ 
+} */
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ margin: auto;
+    border-radius: 30px;
+    width: 400px;
+   padding: 1rem;
+    background: #1488cc;
+    background: -webkit-linear-gradient(180deg, #1488cc 0%, #2b32b2 100%);
+    background: linear-gradient(180deg, #31759c 0%, #70d163 90%);
+}
+.heading{
+    color:white;
+    font-size: 25px;
+}
+.btn-success{
+    background-color: black;
+    color: white;
+}
+.links{
+    color:white;
+}
+.links:hover{
+    font-weight: 700;
+    color:red;
+    cursor: pointer;
 }

@@ -7,17 +7,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  login: any;
+
   constructor( private router: Router, ) {
     }
   ngOnInit() {
-    this.login = {
-    
-      email: '',
-      password: '',
+   
     }
+    signup(){
+      this.router.navigateByUrl('auth/signup');
     }
   submit(){
-    this.router.navigate(['/dashboard']);
+    this.router.navigateByUrl('admin/dashboard');
   }
 }
