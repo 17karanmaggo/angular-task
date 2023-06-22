@@ -1,34 +1,46 @@
 <div class="conatiner">
+  
     <div class="signup">
       <div class="heading">
         Signup
       </div>
       <!-- <form class="signup-control" [formGroup]="signupForm"(ngSubmit)="signup()"> -->
-        <form>
+        <form [formGroup]="signup" (ngSubmit)="signUp()">
         <!-- <div class="input-control mb-3"> -->
           <div class="form-group">
-            <input type="name" id="signup-name" class="signup-form"  pattern="^[a-zA-Z]$"placeholder="Name"> 
+            <input type="name" id="signup-name" class="signup-form" placeholder="Name" formControlName="name"> 
+            <div>
+              <Span style="color:red;" *ngIf="name && name.invalid && name.touched">Name is required</Span>
+            </div>
           </div>
-          <!-- <div class="input-control mb-3"> -->
             <div class="form-group">
-            <input type="email" id="signup-email" class="signup-form"  pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"placeholder="Email"> 
+            <input type="email" id="signup-email" class="signup-form" placeholder="Email"formControlName="email" > 
           </div>
-          <!-- <div class="input-control mb-3"> -->
+          <Span style="color:red;" *ngIf="email && email.invalid && email.touched">Email is required</Span>
+        
             <div class="form-group">
-            <input type="mobileno" id="signup-mobileno" class="signup-form"  pattern="^[6789][0-9]{9}$"placeholder="Mobile"> 
+            <input type="mobileno" id="signup-mobileno" class="signup-form" placeholder="Mobile" formControlName="number" [minlength]="10" [maxlength]="10"> 
           </div>
-          <!-- <div class="input-control mb-3"> -->
+          <Span style="color:red;" *ngIf="number && number.invalid && number.touched">Mobile no is required</Span>
+
+          <div class="form-group">
+            <input type="batchno" id="signup-batchno" class="signup-form" placeholder="Batch No" formControlName="batchno"[maxlength]="5"> 
+          </div>
+          <Span style="color:red;" *ngIf="batchno && batchno.invalid && batchno.touched">number is required</Span>
+     
+            <!-- <div class="form-group">
+            <input type="createpass" id="signup-createpass" class="signup-form" placeholder="createpassword"formControlName="cpass">
+          </div>
+   
             <div class="form-group">
-            <input type="createpass" id="signup-createpass" class="signup-form" placeholder="createpassword">
-          </div>
-          <!-- <div class="input-control "> -->
-            <div class="form-group">
-            <input type="confirmpass" id="signup-confirmpass" class="signup-form" placeholder="confirmpassword">
-          </div>
+            <input type="confirmpass" id="signup-confirmpass" class="signup-form" placeholder="confirmpassword" formControlName="confirmpass">
+          </div> -->
           <div class="click mt-4">
-            <button type="submit" class="button-subimt"(click)="submit()">Submit</button>
+            <button [disabled]="signup.invalid" class="button-subimt">Submit</button>
         </div>
   
       </form>
     </div>
   </div>
+
+  

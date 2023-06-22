@@ -6,6 +6,9 @@ import { RouterModule } from '@angular/router';
 import { AuthRoutes } from './auth.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { AuthApiService } from './auth.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -14,11 +17,16 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     SignupComponent
   ],
+  providers: [
+    AuthApiService
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(AuthRoutes),
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    
     
   ],
  

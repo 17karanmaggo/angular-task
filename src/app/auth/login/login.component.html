@@ -1,47 +1,28 @@
-<!--<div class="conatiner">
-  <div class="login">
-    <form class="login-control aglin-items-center ">
-      
-        <div class="inputBox input-control mb-3">
-          <input type="email" id="login-email" class="login-form"  pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"placeholder="Email">
-          
-        </div>
-        <div class="inputBox input-control ">
-          <input type="password" id="login-password" class="login-form" placeholder="Password">
-        </div>
-        <div class="links">  
-          <a href="#"><i class=""></i> Sign up</a>
-      </div>
-        <div class="inputBox click">
-          <button type="submit" class="button-subimt"(click)="submit()">Submit</button>
-      </div>
 
-    </form>
-  </div>
-</div>-->
 
 <div class="container h-100vh">
-  <div class="row  ">
-    <div class="col-md-4 m-auto">
+  <form [formGroup]="login" (ngSubmit)="logIn()">
+    <!-- <div class="input-control mb-3"> -->
+      <h3>Login Here</h3>
+      <div class="form-group">
+        <input type="name" id="login-name" class="login-form" placeholder="Name" formControlName="name"> 
+        <div>
+          <Span style="color:red;" *ngIf="name && name.invalid && name.touched">Name is required</Span>
+        </div>
+      </div>
+        <div class="form-group">
+        <input type="email" id="login-email" class="login-form" placeholder="Email"formControlName="email" > 
+      </div>
+      <Span style="color:red;" *ngIf="email && email.invalid && email.touched">Email is required</Span>
 
-      <div class="login-form">
-        <h2 class="heading">Sign in</h2>
-        <div class="mb-2">
-          <input type="email" id="login-email" class="form-control"  pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"placeholder="Email">
-        </div>
-        <div class="mb-2">
-          <input type="password" id="login-password" class="form-control" placeholder="Password">
-        </div>
-        <div class="links mb-2">
+      <small class="">Don't have an Account? 
+        <a class="link" (click)="Register()">Register Here</a>
+    </small>
 
-            <a (click)="signup()"> Sign up</a>
-        </div>
-        <div class="">
-          <button type="submit" class="btn btn-success" (click)="submit()">Submit</button>
-        </div>
+      <div class="click mt-4">
+        <button [disabled]="login.invalid" class="button-subimt">Submit</button>
     </div>
-     
-    </div>
-  </div>
+
+  </form>
     
 </div>

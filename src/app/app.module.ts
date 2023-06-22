@@ -6,7 +6,8 @@ import { RouterModule, } from '@angular/router';
 import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import{ AuthModule } from './auth/auth.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 
    
@@ -16,7 +17,9 @@ import{ AuthModule } from './auth/auth.module';
   ],
   imports: [ 
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
